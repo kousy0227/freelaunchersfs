@@ -1,0 +1,316 @@
+/* boostrap boxing */
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+  /* bootstrap boxing */
+  body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/* colors */
+.sfs_gray_text
+{
+    color: #888888!important;
+}
+.sfs_black_text
+{
+    color: #262626!important;
+}
+.sfs_bg_black
+{
+    background: #262626;
+    border-bottom: 3px solid #060606;
+}
+.sfs_purple_text
+{
+    color:#4f57c1;
+}
+.sfs_purple_bg
+{
+    background-color: #4f57c1!important;
+    /* border: 1px #4f57c1 solid; */
+    background: linear-gradient(to right, #262626, #262626);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s 0s;
+}
+.sfs_purple_bg:hover
+{
+    background-size: 100% 100%;
+}
+
+.sfs_purple_btn_outline
+{
+    border-color: #4f57c1;
+    background-color: #ffffff;
+    color:#4f57c1;
+}
+.sfs_purple_btn
+{
+    border-color: #4f57c1;
+    background-color: #4f57c1;
+    color:#ffffff;
+}
+.sfs_purple_btn:hover
+{
+    border-color: #4f57c1;
+    background-color: #ffffff!important;
+    color:#4f57c1!important;
+}
+.sfs_purple_btn_outline:hover
+{
+    border-color: #4f57c1;
+    background-color: #4f57c1;
+    color:#ffffff;
+}
+.sfs_bg_white_trans {
+    background-color: #ffffff42;
+}
+.sfs_bg_white_trans_1
+{
+    background-color: #ffffffc7;
+}
+.sfs_bg_white_trans_2
+{
+    background-color: #fffffff2;
+}
+.sfs_lite_white_text
+{
+    color:#ece5e5;
+}
+
+.sfs_bg_black_trans {
+    background-color: #2125296e;
+}
+/* social icon  */
+.social_icon_custom
+{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
+    filter: alpha(opacity=35);
+    -moz-opacity: 0.35;
+    -khtml-opacity: 0.35;
+    opacity: 0.35;
+    /* -webkit-transition: all 250ms ease-out 0s; */
+    -moz-transition: all 250ms ease-out 0s;
+    -o-transition: all 250ms ease-out 0s;
+    /* transition: all 250ms ease-out 0s; */
+    height: 20px;
+    margin: 4px 0 0 4px;
+    transition: transform .2s;
+}
+.social_icon_custom:hover
+{
+    /* margin: 0 0 0 4px; */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+    filter: alpha(opacity=75);
+    -moz-opacity: 0.75;
+    -khtml-opacity: 0.75;
+    opacity: 0.75;
+    transform: scale(1.5);
+    /* height: 28px; */
+}
+
+/* navbar dropdown */
+.navbar-light .navbar-toggler {
+    color: rgb(79 87 193)!important;
+    border-color: rgb(79 87 193 / 45%)!important;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../images/icons/menu.svg")!important;
+    background-size: 142%;
+}
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu
+    {
+         display: none; 
+    }
+    .navbar .nav-item .dropdown-submenu .dropdown-menu2
+    {
+        display: none; 
+    }
+    .navbar .nav-item:hover .nav-link
+    {
+        color: #ffffff;  
+        background: #262626;
+    }
+    .navbar .nav-item:hover .dropdown-menu
+    {
+        display: block;
+    }
+    .navbar .nav-item .dropdown-submenu:hover .dropdown-menu2
+    {
+         display: block;
+    }
+   
+	.navbar .nav-item .dropdown-menu{
+         margin-top:0;
+         
+        
+        }
+}	
+/* ============ desktop view .end// ============ */
+/* menu dropdwon icon hide */
+#menu_list_sfs .dropdown-toggle::after {
+    display: none!important;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+/* menu dropdwon icon hide */
+#menu_list_sfs ul li a
+{
+    font-size: 14px!important;
+    
+}
+#menu_list_sfs ul li .nav-link
+{
+  padding:10px!important;
+    
+}
+#menu_list_sfs .dropdown-item:focus, .dropdown-item:hover 
+{
+    text-decoration: none;
+    color: #ffffff;  
+    background: #262626;
+}
+
+/* multi dropdown */
+
+.dropdown-submenu{
+    position: relative;
+}
+.dropdown-submenu a::after{
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 3px;
+    top: 40%;
+}
+.dropdown-submenu:hover .dropdown-menu2, .dropdown-submenu:focus .dropdown-menu2{
+    display: flex;
+    flex-direction: column;
+    position: absolute !important;
+    margin-top: -30px;
+    left: 100%;
+}
+@media (max-width:1030px)
+{
+    #menu_list_sfs ul li a {
+        font-size: 12px!important;
+    }
+}
+@media (max-width: 992px) {
+    /* .dropdown-menu2{
+        width: 50%;
+    } */
+    
+    .navbar .nav-item .dropdown-submenu .dropdown-menu2
+    {
+        display: none; 
+    }
+    .dropdown-menu2 .dropdown-submenu{
+        width: auto;
+    }
+    .navbar .nav-item .dropdown-submenu:hover .dropdown-menu2
+    {
+        display: contents;
+    }
+    .navbar .nav-item:hover .nav-link
+    {
+        color: #ffffff;  
+        background: #262626;
+    }
+}
+/* multi dropdown */
+
+
+/* carousel header */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  /* .carousel_content
+  {
+      height:480px;
+  }
+  @media all and (max-width: 992px)
+  {
+    .carousel_content
+    {
+        height:300px;
+    } 
+  } */
+  @media all and (max-width:542px)
+  {
+    #carousel_header  h1
+     {
+        font-size: 1.5rem;
+    } 
+}
+/* carousel end */
+/* pointer */
+.cursor_pointer_sfs
+{
+    cursor: pointer;
+}
+.font_14px
+{
+    font-size:14px;
+}
+
+#carousel_body_sfs .carousel-caption {
+    position: absolute; 
+    bottom:auto;
+    top:0px;
+    /* width:530px; */
+    right: 5%;
+    text-align: right;
+    left:auto
+}
+#sfs_about h3
+{
+    background: url("../images/icons/bar.png") repeat-x scroll bottom left transparent;
+    padding-bottom: 20px;
+}
+/* filter */
+.filter_invert
+{
+    filter: invert(1);
+    opacity: 0.75!important;
+}
+.filter_brightness
+{
+    filter: brightness(0.5);
+}
+/* width */
+.w-10
+{
+    width: 10%;
+}
+.w-20
+{
+    width: 20%;
+}
+.w-30
+{
+    width: 30%;
+}
+.w-40
+{
+    width: 40%;
+}
+.w-60
+{
+    width: 60%;
+}
+
+/* button animation effect */
+
+/* Sweep To Left */
+
+
+
